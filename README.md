@@ -4,6 +4,7 @@
     [x] - Develop Bullhorn Extractor
     [ ] - Develop Hubspot Extractor
     [ ] - Develop Google BigQuery Loader
+    [ ] - Define ELT Tasks
     [ ] - Write Github Actions
     [ ] - Write dbt incremental models
     [ ] - Write dbt tests
