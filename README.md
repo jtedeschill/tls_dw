@@ -1,5 +1,13 @@
 # TLS Datawarehouse
 
+<!-- checkbox -->
+    [x] - Develop Bullhorn Extractor
+    [ ] - Develop Hubspot Extractor
+    [ ] - Develop Google BigQuery Loader
+    [ ] - Write Github Actions
+    [ ] - Write dbt incremental models
+    [ ] - Write dbt tests
+
 ## Introduction
 
 This repository contains pythons scripts to extract data from Bullhorn, Hubspot and write it to Google BigQuery.
