@@ -4,6 +4,9 @@
 - [x]  Develop Bullhorn Extractor
 - [ ]  Develop Hubspot Extractor
 - [ ]  Develop Google BigQuery Loader
+- [ ]  Setup Service Account for Google BigQuery
+- [ ]  Setup Secrets for Bullhorn and Hubspot
+- [ ]  Setup WIF for BigQuery
 - [ ]  Define ELT Tasks
 - [ ]  Write Github Actions
 - [ ]  Write dbt incremental models
