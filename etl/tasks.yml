@@ -1,0 +1,33 @@
+- task:
+  name: "bullhorn_contacts"
+  description: "Extract contacts from Bullhorn"
+  extractor :
+    source: "bullhorn"
+    query_params:
+    fields:
+      - "id"
+      - "name"
+      - "email"
+      - "phone"
+      - "company"
+      - "title"
+      - "created_at"
+      - "updated_at"
+
+- task:
+  name: "hubspot_contacts"
+  description: "Extract contacts from Hubspot"
+  extractor :
+    source: "hubspot"
+    query_params:
+    fields:
+      - "id"
+      - "name"
+      - "email"
+      - "phone"
+      - "company"
+      - "title"
+      - "created_at"
+      - "updated_at"
+
+  
