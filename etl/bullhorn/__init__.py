@@ -1,5 +1,5 @@
 import requests
-from dotenv import load_dotenv
+
 import os
 import logging
 from urllib.parse import urlparse
@@ -153,12 +153,10 @@ class BullhornClient:
 
 
 if __name__ == '__main__':
-    load_dotenv()
     BH = BullhornClient(os.getenv('BH_USERNAME'), os.getenv('BH_PASSWORD'), os.getenv('BH_CLIENT_ID'), os.getenv('BH_CLIENT_SECRET'))
     BH.authenticate()
 
-    df = pd.DataFrame.from_records(BH.make_request('ClientContact', 'id,name,email', 'dateAdded>1000000000000', 500, 69000))
-    print(df)
+
 
 
 

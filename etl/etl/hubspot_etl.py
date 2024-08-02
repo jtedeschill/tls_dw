@@ -1,13 +1,11 @@
 from tasks import hubspot_tasks
 from hubspot import HubSpot
-from dotenv import load_dotenv
 import os
 import pandas as pd
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-load_dotenv()
 
 hubspot_token = os.getenv("HUBSPOT_TOKEN")
 client = HubSpot(access_token=hubspot_token)

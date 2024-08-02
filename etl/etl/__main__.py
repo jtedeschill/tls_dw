@@ -8,9 +8,10 @@ from tasks import bullhorn_tasks
 
 import duckdb
 
-load_dotenv()
 
 con = duckdb.connect()
+
+BQ_PROJECT_ID = os.getenv("BQ_PROJECT_ID")
 
 
 BH = BullhornClient(
@@ -46,7 +47,11 @@ for task, params in bullhorn_tasks.items():
 
         df = df.rename(columns=params["rename_map"])
 
-        df.to_csv(f"{params['endpoint']}.csv", index = False)
+        df.to_gbq(
+            f"bullhorn.{params['table']}",
+            project_id=BQ_PROJECT_ID,
+            if_exists="replace",
+        )
 
     except Exception as e:
         print(f"Error transforming data: {e}")
