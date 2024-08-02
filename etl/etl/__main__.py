@@ -1,7 +1,5 @@
-from dotenv import load_dotenv
 import os
-from etl.bullhorn import BullhornClient
-from etl.etl.hubspot_etl import HubSpot
+from bullhorn import BullhornClient
 import pandas as pd
 
 from tasks import bullhorn_tasks
