@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+  schedule:
+    # runs at 10 am UTC every day
+    - cron: '0 10 * * *'
+
 
 jobs: 
     bullhorn:
